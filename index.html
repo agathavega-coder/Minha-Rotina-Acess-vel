@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Rotina Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Atalho de acessibilidade para pular o menu -->
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1>Minha Rotina Acessível</h1>
+            <p>Um espaço claro e previsível para organizar o seu dia a dia com tranquilidade.</p>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav class="nav-menu" aria-label="Navegação principal">
+        <div class="container">
+            <ul>
+                <li><a href="#rotina">Rotina Diária</a></li>
+                <li><a href="#dicas">Dicas de Comunicação</a></li>
+                <li><a href="#contato">Suporte</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main id="conteudo-principal" class="container">
+        
+        <!-- Seção de Rotina (Pelo menos 6 atividades, O que, Quando, Onde) -->
+        <section id="rotina" class="section">
+            <h2>Sua Rotina de Hoje</h2>
+            <p class="section-desc">Acompanhe as atividades organizadas em ordem cronológica. Cada cartão indica <strong>o que fazer</strong>, <strong>quando fazer</strong> e <strong>onde fazer</strong>.</p>
+            
+            <div class="grid-atividades">
+                
+                <!-- Atividade 1 -->
+                <article class="card-atividade">
+                    <h3>1. Acordar e Higiene Pessoal</h3>
+                    <p><strong>Quando:</strong> 07:00 - 07:30</p>
+                    <p><strong>Onde:</strong> Quarto e Banheiro</p>
+                    <span class="badge" aria-label="Status: Manhã">Manhã</span>
+                </article>
+
+                <!-- Atividade 2 -->
+                <article class="card-atividade">
+                    <h3>2. Café da Manhã</h3>
+                    <p><strong>Quando:</strong> 07:30 - 08:00</p>
+                    <p><strong>Onde:</strong> Cozinha</p>
+                    <span class="badge" aria-label="Status: Manhã">Manhã</span>
+                </article>
+
+                <!-- Atividade 3 -->
+                <article class="card-atividade">
+                    <h3>3. Trabalho ou Estudos</h3>
+                    <p><strong>Quando:</strong> 08:30 - 12:00</p>
+                    <p><strong>Onde:</strong> Escritório / Escrivaninha</p>
+                    <span class="badge" aria-label="Status: Manhã">Manhã</span>
+                </article>
+
+                <!-- Atividade 4 -->
+                <article class="card-atividade">
+                    <h3>4. Almoço e Descanso</h3>
+                    <p><strong>Quando:</strong> 12:00 - 13:30</p>
+                    <p><strong>Onde:</strong> Sala de Jantar / Sofá</p>
+                    <span class="badge" aria-label="Status: Tarde">Tarde</span>
+                </article>
+
+                <!-- Atividade 5 -->
+                <article class="card-atividade">
+                    <h3>5. Caminhada ao Ar Livre</h3>
+                    <p><strong>Quando:</strong> 16:30 - 17:30</p>
+                    <p><strong>Onde:</strong> Parque do Bairro</p>
+                    <span class="badge" aria-label="Status: Tarde">Tarde</span>
+                </article>
+
+                <!-- Atividade 6 -->
+                <article class="card-atividade">
+                    <h3>6. Jantar e Preparação para o Sono</h3>
+                    <p><strong>Quando:</strong> 19:30 - 21:30</p>
+                    <p><strong>Onde:</strong> Cozinha e Quarto</p>
+                    <span class="badge" aria-label="Status: Noite">Noite</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Seção de Dicas de Comunicação Clara -->
+        <section id="dicas" class="section">
+            <h2>Dicas de Comunicação Clara</h2>
+            <ul class="dicas-lista">
+                <li>Use frases curtas, diretas e objetivas.</li>
+                <li>Mantenha uma rotina visual previsível e evite mudanças de última hora sem aviso prévio.</li>
+                <li>Utilize elementos visuais e ícones para apoiar a compreensão textual.</li>
+                <li>Dê tempo suficiente para o processamento da informação antes de esperar uma resposta.</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Botões Interativos -->
+        <section class="section text-center">
+            <h2>Ferramentas e Ações</h2>
+            <div class="botoes-container">
+                <button class="btn btn-primario" onclick="alert('Bom trabalho! Rotina revisada com sucesso.')">Marcar Dia como Concluído</button>
+                <button class="btn btn-secundario" onclick="window.print()">Imprimir Rotina</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <p>&copy; 2026 - Projeto Minha Rotina Acessível. Desenvolvido com foco em inclusão e autonomia.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
