@@ -1,0 +1,213 @@
+/* Variáveis de Cores com alto contraste */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --primary-color: #0b5ed7;
+    --primary-hover: #054196;
+    --secondary-color: #6c757d;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --focus-ring: #ffc107;
+}
+
+/* Reset básico e tipografia legível */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 1.1rem; /* Fonte levemente maior para melhor legibilidade */
+}
+
+/* Link de salto para acessibilidade (Visível apenas ao receber foco) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Layout Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Menu de Navegação */
+.nav-menu {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--border-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    color: var(--primary-color);
+    background-color: #e9ecef;
+}
+
+/* Seções */
+.section {
+    padding: 3rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.section-desc {
+    margin-bottom: 2rem;
+    color: #495057;
+}
+
+/* Grid de Atividades */
+.grid-atividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-atividade {
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.card-atividade h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: #e2e3e5;
+    color: #383d41;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Lista de Dicas */
+.dicas-lista {
+    background: white;
+    padding: 2rem 2rem 2rem 3rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.dicas-lista li {
+    margin-bottom: 0.8rem;
+}
+
+/* Botões */
+.text-center {
+    text-align: center;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primario {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primario:hover, .btn-primario:focus {
+    background-color: var(--primary-hover);
+}
+
+.btn-secundario {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-secundario:hover, .btn-secundario:focus {
+    background-color: #5a6268;
+}
+
+/* Foco Visível Global para Acessibilidade (Teclado) */
+a:focus, button:focus, input:focus {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
